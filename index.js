@@ -1,12 +1,17 @@
 import http from 'node:http';
 import routes from './routes.js';
+import { pageFinder } from './module/pageFinder.js';
 
 const app=http.createServer((req,res)=>{
-    const page=routes(req.url);
+    let page=routes(req.url);
+
     if(page!==undefined){
+    res.statusCode=200;
         res.end(page);
     }else{
-        res.end("<h1>Not Founded</h1>");
+        res.statusCode=404;
+        page=pageFinder("./view/404.html")
+        res.end(page);
     }
 });
 
