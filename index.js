@@ -3,11 +3,23 @@ import routes from './routes.js';
 import { pageFinder } from './module/pageFinder.js';
 
 const app=http.createServer((req,res)=>{
-    let page=routes(req.url);
+    
+    if(req.url.includes('style.css')){
+        const cssSheet=pageFinder('./public/assets/css/style.css');
+        res.writeHead(200,{'Content-Type':'text/css'});
+        res.write(cssSheet.toString());
+     }
 
+     if(req.url.includes('index.js')){
+        const jsFile=pageFinder('./public/assets/js/index.js');
+        res.writeHead(200,{'Content-Type':'text/javascript'});
+        res.write(jsFile.toString());
+     }
+
+    let page=routes(req.url);
     if(page!==undefined){
-    res.writeHead(200,{'Content-Type':'text/html'})
-        res.end(page);
+    res.write(page);
+    res.end();
     }else{
         res.writeHead(404,{'Content-Type':'text/html'});
         page=pageFinder("./public/404.html")

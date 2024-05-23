@@ -5,11 +5,11 @@ const routes=(route)=>{
     switch(route){
         case '/':
         case '/home':
-            page=pageFinder("./view/index.html");
+            page=pageFinder("./public/index.html");
         break;
         case '/about':
         case '/acerca':
-            page=pageFinder("./view/acerca.html");
+            page=pageFinder("./public/acerca.html");
         break;
     }
     return page;
