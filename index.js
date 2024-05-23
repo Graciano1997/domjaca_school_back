@@ -10,11 +10,11 @@ const app=http.createServer((req,res)=>{
         res.write(cssSheet.toString());
      }
 
-     if(req.url.includes('index.js')){
-        const jsFile=pageFinder('./public/assets/js/index.js');
-        res.writeHead(200,{'Content-Type':'text/javascript'});
-        res.write(jsFile.toString());
-     }
+    //  if(req.url.includes('index.js')){
+    //     const jsFile=pageFinder('./public/assets/js/index.js');
+    //     // res.writeHead(200,{'Content-Type':'text/javascript'});
+    //     res.write(jsFile.toString());
+    //  }
 
     let page=routes(req.url);
     if(page!==undefined){
