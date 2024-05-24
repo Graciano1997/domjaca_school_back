@@ -23,8 +23,11 @@ const app = http.createServer((req, res) => {
     }
 
     if(page===undefined){
-      page = pageFinder("./view/404.html")
-      res.end(page);
+      page = pageFinder("./view/404.html");
+      res.statusCode=404;
+      res.statusMessage="The Page Was not found!";
+      res.write(page);
+      res.end();
     }
 
     if(page===''){
