@@ -29,10 +29,7 @@ body {
   background-color: rgba(52, 50, 26, 0.953);
 }
 
-.logo {
-  color: rgba(239, 234, 144, 0.953);
-  /* background-color: rgba(239, 234, 144, 0.953); */
-}
+
 
 nav ul {
   gap: 10px;
@@ -54,6 +51,15 @@ nav ul li a:hover,
 a:active{
   padding-bottom: 5px;
   border-bottom: 2px solid white;
+}
+
+.logo {
+  cursor: pointer;
+  /* background-color: rgba(239, 234, 144, 0.953); */
+}
+.logo a{
+  text-decoration: none;
+  color: rgba(239, 234, 144, 0.953);
 }
 
 .notfoundContainer {
@@ -87,7 +93,7 @@ a:active{
   font-style: italic;
 }
 
-.homePageContainer {
+.mainPageContainer {
   /* padding: 20px; */
   height: 500vh;
   /* background-color: yellowgreen; */
@@ -186,4 +192,36 @@ a:active{
   margin: 20px 0 20px 0;
   height: 460px;
   border: 3px solid black;
+}
+
+.loginContainer{
+  margin-top: 40px;
+  padding: 10px;
+  gap:10px;
+}
+
+.loginContainer label{
+  color:white;
+}
+
+.loginContainer input,
+.loginContainer button
+{
+
+  padding: 8px;
+  border-radius: 8px;
+  border:transparent;
+}
+
+.loginContainer button{
+  margin-top: 8px;
+}
+
+.login{
+  height: 400px;
+}
+.login a{
+  padding: 10px;
+  color: white;
+
 }
