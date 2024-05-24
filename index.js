@@ -1,30 +1,37 @@
 import http from 'node:http';
 import routes from './routes.js';
-import { pageFinder } from './module/pageFinder.js';
+import pageFinder from './module/pageFinder.js';
 
-const app=http.createServer((req,res)=>{
+const app = http.createServer((req, res) => {
+  if (req.url.indexOf('.css') != -1) {
+    const cssSheet = pageFinder('./public/assets/style.css');
+    res.writeHead(200, { 'Content-Type': 'text/css' });
+    res.write(cssSheet.toString());
+  }
+
+  if (req.url.indexOf('.js') != -1) {
+    const jsPage = pageFinder('./public/assets/index.js');
+    res.writeHead(200, { 'Content-Type': 'text/javascript' });
+    res.write(jsPage.toString());
+  }
+
+    let page = routes(req.url);
+    if ((page !== undefined) && (page !== '')) {
+      res.writeHead(200, { 'Content-Type': 'text/html' });
+      res.write(page);
+      res.end();
+    }
+
+    if(page===undefined){
+      page = pageFinder("./public/404.html")
+      res.end(page);
+    }
     
-    if(req.url.includes('style.css')){
-        const cssSheet=pageFinder('./public/assets/css/style.css');
-        res.writeHead(200,{'Content-Type':'text/css'});
-        res.write(cssSheet.toString());
-     }
-
-    //  if(req.url.includes('index.js')){
-    //     const jsFile=pageFinder('./public/assets/js/index.js');
-    //     // res.writeHead(200,{'Content-Type':'text/javascript'});
-    //     res.write(jsFile.toString());
-    //  }
-
-    let page=routes(req.url);
-    if(page!==undefined){
-    res.write(page);
-    res.end();
-    }else{
-        res.writeHead(404,{'Content-Type':'text/html'});
-        page=pageFinder("./public/404.html")
-        res.end(page);
+    if(page===''){
+      res.end();
     }
 });
 
-app.listen(3000,'localhost',()=>{console.log("Servidor da Escola Dom Jaca Ligado!")});
+app.listen(3000, 'localhost', () => {
+  console.log("Servidor da Escola Dom Jaca Ligado!");
+});

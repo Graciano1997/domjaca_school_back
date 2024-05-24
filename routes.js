@@ -1,17 +1,23 @@
-import { pageFinder } from './module/pageFinder.js';
+import pageFinder from './module/pageFinder.js';
 
-const routes=(route)=>{
-    let page=undefined;
-    switch(route){
+const routes = (route) => {
+    let page = undefined;
+    switch (route) {
+        case '/assets/style.css':
+        case '/assets/index.js':
+        case '/favicon.ico':
+            page='';
+            break;
         case '/':
         case '/home':
-            page=pageFinder("./public/index.html");
-        break;
+            page = pageFinder("./public/index.html");
+            break;
         case '/about':
         case '/acerca':
-            page=pageFinder("./public/acerca.html");
-        break;
+            page = pageFinder("./public/acerca.html");
+            break;
     }
+    console.log(route);
     return page;
 };
 

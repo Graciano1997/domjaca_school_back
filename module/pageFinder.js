@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 
-export const pageFinder = (path) => {
+const pageFinder = (path) => {
   try {
     return (fs.readFileSync(path, (err, data) => {
       if (err) {
@@ -9,7 +9,8 @@ export const pageFinder = (path) => {
       return data.toString();
     }))
   } catch (error) {
-    console.log(error);
     return undefined;
   }
 };
+
+export default pageFinder;

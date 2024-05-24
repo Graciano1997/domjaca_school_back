@@ -1,1 +1,1 @@
-alert("ola JS");
+console.log("load the JS");
