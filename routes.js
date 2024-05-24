@@ -30,6 +30,9 @@ const routes = (route) => {
         case '/student_gate':
             page = pageFinder("./view/portal.html");
             break;
+        case '/alums':
+            page = pageFinder("./view/alums.html");
+            break;
     }
     console.log(route);
     return page;

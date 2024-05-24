@@ -115,6 +115,7 @@ a:active{
 .boasVindasContainer {
   height: 400px;
   align-items: center;
+  gap:8px;
   justify-content: center;
   /* background: radial-gradient(rgba(233, 227, 124, 0.953),rgba(0, 0, 0, 0.762)); */
   background: linear-gradient(rgba(239, 234, 144, 0.953),white,rgba(52, 50, 26, 0.744));
