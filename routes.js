@@ -10,11 +10,11 @@ const routes = (route) => {
             break;
         case '/':
         case '/home':
-            page = pageFinder("./public/index.html");
+            page = pageFinder("./view/index.html");
             break;
         case '/about':
         case '/acerca':
-            page = pageFinder("./public/acerca.html");
+            page = pageFinder("./view/acerca.html");
             break;
     }
     console.log(route);

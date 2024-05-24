@@ -23,10 +23,10 @@ const app = http.createServer((req, res) => {
     }
 
     if(page===undefined){
-      page = pageFinder("./public/404.html")
+      page = pageFinder("./view/404.html")
       res.end(page);
     }
-    
+
     if(page===''){
       res.end();
     }
