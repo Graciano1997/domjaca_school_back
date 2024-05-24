@@ -22,7 +22,7 @@ body {
   position: fixed;
   top: 0;
   height: 40px;
-  width: 98%;
+  width: 99%;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -67,6 +67,8 @@ a:active{
 
 .notfoundContainer div {
   gap: 12px;
+  /* background-color: rgba(52, 50, 26, 0.953); */
+  color: rgba(52, 50, 26, 0.953);
 }
 
 .notfoundContainer div h1 {
