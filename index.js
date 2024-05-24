@@ -32,6 +32,4 @@ const app = http.createServer((req, res) => {
     }
 });
 
-app.listen(3000, 'localhost', () => {
-  console.log("Servidor da Escola Dom Jaca Ligado!");
-});
+app.listen(3000, 'localhost', () => {console.log("Servidor da Escola Dom Jaca Ligado!");});
