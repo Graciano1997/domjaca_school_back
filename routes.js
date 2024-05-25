@@ -39,6 +39,15 @@ const routes = (route) => {
         case '/dashboard':
             page = pageFinder("./view/dashboard/dashboard.html");
             break;
+        case '/dashboard/perfil':
+            page = pageFinder("./view/dashboard/perfil.html");
+            break;
+        case '/dashboard/aproveitamento':
+            page = pageFinder("./view/dashboard/aproveitamento.html");
+            break;
+        case '/dashboard/notas':
+            page = pageFinder("./view/dashboard/notas.html");
+            break;
     }
     console.log(route);
     return page;
