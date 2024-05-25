@@ -1,7 +1,7 @@
-import Head from "./js/Head.js";
-
-document.addEventListener('DOMContentLoaded',()=>{
-    console.log(Head({title:'homePage'}));
-    // document.querySelector('#head').innerHTML=;
+document.querySelector('#btnHamburguer').addEventListener("click",(el)=>{
+document.querySelector('.menuContainer').classList.add('show');
 });
 
+document.querySelector('#btnClose').addEventListener("click",(el)=>{
+document.querySelector('.menuContainer').classList.remove('show');
+});

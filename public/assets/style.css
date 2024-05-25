@@ -14,7 +14,6 @@
 }
 
 body {
-  /* background-color: rgb(240, 240, 110); */
   background-color: white;
 }
 
@@ -29,28 +28,30 @@ body {
   background-color: rgba(52, 50, 26, 0.953);
 }
 
-
-
-nav ul {
-  gap: 10px;
-}
-.separator{
-  width: 2px;
-  height: 20px;
-  background-color: gold;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;  
-  font-size: 15px;
-  font-weight: 700;
-  transition: all 1s ease-in-out;
+nav{
+  display: none;
 }
 
-nav ul li a:hover,
-a:active{
-  padding-bottom: 5px;
-  border-bottom: 2px solid white;
+#btnHamburguer{
+padding:10px;
+margin-right: 10px;
+background-color: transparent;
+border: solid 1px white;
+color:white;
+transition: all 1s ease-in-out;
+}
+#btnClose{
+padding:10px;
+margin-right: 10px;
+background-color: transparent;
+border: solid 1px white;
+color:white;
+transition: all 1s ease-in-out;
+}
+
+#btnHamburguer:hover,
+#btnClose:hover{
+  box-shadow: 0 0 8px 5px rgba(255, 217, 0, 0.839);
 }
 
 .logo {
@@ -303,4 +304,81 @@ button{
 #anuncioData{
   text-align: end;
   color:red;
+}
+
+em{
+  font-weight: 500;
+}
+
+.menuContainer{
+  background-color:rgba(30, 30, 8, 0.766);
+  position: fixed;
+  top: 0;
+  left:-100%;
+  width:100%;
+  height: 100%;
+  transition: all 1s ease-in-out;
+}
+
+.show{
+  left: 0;
+}
+
+.menuItem{
+  margin-top: 60px;
+  padding: 10px;
+  width: 70%;
+  height: 95%;
+  background-color: white;
+  border-bottom-right-radius: 10px;
+}
+.menuItem ul{
+  gap: 8px;
+}
+.menuItem ul li a{
+  text-decoration: none;
+  color:white;
+  font-weight: 600;
+}
+.menuItem ul li{
+  background-color: rgb(103, 103, 49);
+  padding: 8px;
+  transition: all 1s ease-in-out;
+}
+.menuItem ul li:hover{
+  background-color: rgb(168, 168, 78);
+}
+
+
+@media screen and (min-width:964px) {
+  #btnHamburguer{display: none;}
+  nav{
+    display: flex;
+    margin-right: 10px;
+  }
+  nav ul {
+    display: flex;
+    gap: 10px;
+  }
+  .separator{
+    width: 2px;
+    height: 20px;
+    background-color: gold;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;  
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 1s ease-in-out;
+  }
+  
+  nav ul li a:hover,
+  a:active{
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+  }
+  .menuContainer{
+    left: -100%;
+  }
 }
