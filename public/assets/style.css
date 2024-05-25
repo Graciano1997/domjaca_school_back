@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 
 .flexH {
@@ -50,7 +51,8 @@ transition: all 1s ease-in-out;
 }
 
 #btnHamburguer:hover,
-#btnClose:hover{
+#btnClose:hover,
+#portalLink:hover{
   box-shadow: 0 0 8px 5px rgba(255, 217, 0, 0.839);
 }
 
@@ -131,9 +133,52 @@ transition: all 1s ease-in-out;
   color:rgba(52, 50, 26, 0.953);
 }
 
+.dashboardContainer{
+  height: 100vh;
+  gap:8px;
+  background: linear-gradient(rgba(239, 234, 144, 0.953),rgba(52, 50, 26, 0.744));
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:rgba(52, 50, 26, 0.953);
+ 
+}
+.mainArea{
+  padding-top: 50px;
+}
+
+
 .boasVindasContainer h1{
   text-align: center;
   font-size: calc(30pt + 50%);
+}
+.dashboardMenu{
+  background-color: white;
+  width: 300px;
+  padding-left: 15px;
+  overflow-x: hidden;
+   padding-top: 50px;
+}
+
+.dashboardMenu ul{
+  padding-right: 12px;
+gap: 30px;
+}
+
+.dashboardMenu ul li {
+  overflow-x: hidden;
+  padding: 10px;
+  background-color:rgba(97, 93, 21, 0.953);
+  transition: all 1s ease-in-out;
+}
+
+.dashboardMenu ul li:hover{
+  background-color:rgba(229, 223, 104, 0.953);
+}
+
+
+.dashboardMenu ul li a{
+  overflow-x: hidden;
+  color:white;
 }
 
 .visaoContainer {
@@ -198,8 +243,10 @@ transition: all 1s ease-in-out;
 
 .loginContainer{
   margin-top: 40px;
-  padding: 10px;
   gap:10px;
+  background-color: rgb(103, 103, 49);
+  width: 300px;
+  padding: 30px;
 }
 
 .loginContainer label{
@@ -254,9 +301,11 @@ transition: all 1s ease-in-out;
 .login{
   height: 400px;
 }
+
 .login a{
+  text-align: center;
   padding: 10px;
-  color: white;
+  color: rgb(103, 103, 49);
 
 }
 
@@ -348,7 +397,23 @@ em{
 .menuItem ul li:hover{
   background-color: rgb(168, 168, 78);
 }
+.noScrool{
+  overflow-y: hidden;
+}
 
+#portalLink{
+  padding: 10px;
+  text-decoration: none;
+  background-color: rgb(168, 168, 78);
+  border-radius: 8px;
+  color: white;
+  transition: all 1s ease-in-out;
+}
+
+.loginContainerSection{
+display: flex;
+justify-content: center;
+}
 
 @media screen and (min-width:964px) {
   #btnHamburguer{display: none;}

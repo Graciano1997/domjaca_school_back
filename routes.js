@@ -33,6 +33,12 @@ const routes = (route) => {
         case '/alums':
             page = pageFinder("./view/alums.html");
             break;
+        case '/login':
+            page = pageFinder("./view/dashboard/login.html");
+            break;
+        case '/dashboard':
+            page = pageFinder("./view/dashboard/dashboard.html");
+            break;
     }
     console.log(route);
     return page;
