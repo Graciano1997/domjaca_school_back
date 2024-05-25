@@ -29,8 +29,8 @@
     </header>
     <main class="homePageContainer">
         <section class="boasVindasContainer flexV">
-            <h1>Área de Matricula ou Confirmação</h1>
-            <h2>Agora ja podes fazer a matricula ou confirmação apartir de casa ou qualquer lugar.</h2>
+            <h1>Área de Mátricula ou Confirmação</h1>
+            <h2>Agora ja podes fazer a tua mátricula ou confirmação apartir de casa ou qualquer lugar.</h2>
         </section>
 
         <!-- <section class="missaoContainer">
@@ -70,16 +70,70 @@
 
         <section class="diferencasContainer">
             <div class="textContainer">
-                <h1>Matricula ou Confirmação</h1>
-                <p>
-                    <span id="quote">"</span>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et porro possimus voluptatum quos ab? Tenetur explicabo ipsum consectetur temporibus doloremque unde cupiditate,
-                     rerum voluptates voluptatum fuga error optio. Aliquid, expedita.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et porro possimus voluptatum quos ab? Tenetur explicabo ipsum consectetur temporibus doloremque unde cupiditate,
-                     rerum voluptates voluptatum fuga error optio. Aliquid, expedita.
-                </p>
+                <h1>Venha Estudar Conosco</h1>
+              <form action="" method="post" class="formMatricula flexV">
+                <label for="nome">
+                    Nome Completo
+                </label>
+                <input type="text" name="nome" id="nome">
+                <label for="documentoTipo">
+                    Tipo de Documento
+                </label>
+                <select name="documentoTipo" id="documentoTipo">
+                    <option value="bilhete">Bilhete</option>
+                    <option value="cédula">Cédula</option>
+                    <option value="atestado">Acento de Nascimento</option>
+                </select>
+                <div class="contatos flexH">
+                    <div class="flexV">
+                        <label for="telefone">Tel. Encarregado</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="935636086">
+                    </div>
+                    <div class="flexV">
+                        <label for="telefone">Tel. Estudante</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="915678609">
+                    </div>
+                </div>
+                <label for="sexo">
+                    Sexo
+                </label>
+                <select name="sexo" id="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+                <label for="classe">
+                    Classe
+                </label>
+                <select name="classe" id="classe">
+                    <option value="0">Inciciação</option>
+                    <option value="1">1ª Classe</option>
+                    <option value="2">2ª Classe</option>
+                    <option value="3">3ª classe</option>
+                    <option value="4">4ª classe</option>
+                    <option value="5">5ª classe</option>
+                    <option value="6">6ª classe</option>
+                    <option value="7">7ª classe</option>
+                    <option value="8">8ª classe</option>
+                    <option value="9">9ª classe</option>
+                </select>
+                <label for="turno">
+                    Turno
+                </label>
+                <select name="turno" id="turno">
+                    <option value="manhã">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                </select>
+                <label for="matricula">
+                    Mátricula ou Confirmação ?
+                </label>
+                <select name="matricula" id="matricula">
+                    <option value="matricula">Mátricula</option>
+                    <option value="confirmacao">Confirmação</option>
+                </select>
+                <label for="foto">Foto</label>
+                <input type="file" name="foto" id="foto">
+               <button>Salvar</button> 
+              </form>
             </div>
             <div class="picContainer"> 
                 <h1>aqui</h1>

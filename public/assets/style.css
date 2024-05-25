@@ -102,11 +102,12 @@ a:active{
 .missaoContainer,
 .visaoContainer,
 .diferencasContainer {
-  height: 700px;
+  /* height: 800px; */
   padding: 30px;
   display: grid;
   grid-template-columns: 65fr 35fr;
   background-color: rgb(39, 39, 20);
+  column-gap: 10px;
   justify-content: space-between;
   color: white;
   padding-bottom: 50px;
@@ -204,6 +205,9 @@ a:active{
   color:white;
 }
 
+.formMatricula input,
+.formMatricula select,
+.formMatricula button,
 .loginContainer input,
 .loginContainer button
 {
@@ -211,6 +215,35 @@ a:active{
   padding: 8px;
   border-radius: 8px;
   border:transparent;
+}
+
+.formMatricula input,
+.formMatricula select,
+.formMatricula button
+{
+  border: 1px solid rgb(103, 103, 49);
+}
+
+.formMatricula input:active,
+.formMatricula select:active,
+.formMatricula button:active{
+  /* outline: none; */
+  outline-color:rgb(103, 103, 49);
+}
+#sloga{
+  padding: 0.5rem;
+  text-align: justify;
+  color:rgb(220, 37, 37);
+}
+
+.formMatricula button{
+  background-color:rgb(103, 103, 49);
+  color: white;
+}
+
+.formMatricula{
+  gap:10px;
+  padding: 10px;
 }
 
 .loginContainer button{
@@ -224,4 +257,50 @@ a:active{
   padding: 10px;
   color: white;
 
+}
+
+.contatos{
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.contatos div{
+  width:45%
+}
+
+button{
+  cursor: pointer;
+}
+.hide{
+  display: none;
+}
+
+.studentPicture{
+  background-color: red;
+  border-radius: 8px;
+  width: 140px;
+  height: 140px;
+}
+
+.studentContainerHonor{
+  align-items: center;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.studentContainerHonor:hover{
+  border:1px solid white;
+  border-radius: 8px;
+}
+
+.honraContainer{
+  gap: 15px;
+}
+
+.anunciosContainer{
+  gap: 10px;
+}
+#anuncioData{
+  text-align: end;
+  color:red;
 }
