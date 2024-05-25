@@ -56,14 +56,37 @@ transition: all 1s ease-in-out;
   box-shadow: 0 0 8px 5px rgba(255, 217, 0, 0.839);
 }
 
-.logo {
+.logo,
+.logoDashboard {
   cursor: pointer;
   /* background-color: rgba(239, 234, 144, 0.953); */
 }
+
 .logo a{
   text-decoration: none;
   color: rgba(239, 234, 144, 0.953);
 }
+.logoDashboard{
+  background-color: rgba(52, 50, 26, 0.953);
+  position: absolute;
+  width: 18.4%;
+  top: 0;
+  left:0;
+}
+
+.dashboardHeader{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: red;
+  height: 100px;
+}
+
+.logoDashboard a{
+  text-decoration: none;
+  color: rgba(239, 234, 144, 0.953);
+}
+
 
 .notfoundContainer {
   height: 90vh;
