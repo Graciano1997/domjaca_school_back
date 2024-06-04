@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+.h1{
+  font-size: calc(50px + 10%);
+}
+
 .flexH {
   display: flex;
 }
@@ -26,7 +30,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: rgba(52, 50, 26, 0.953);
+  /* background-color: rgba(52, 50, 26, 0.953); */
+  background: rgb(230, 58, 58);
 }
 
 nav{
@@ -41,6 +46,7 @@ border: solid 1px white;
 color:white;
 transition: all 1s ease-in-out;
 }
+
 #btnClose{
 padding:10px;
 margin-right: 10px;
@@ -66,6 +72,7 @@ transition: all 1s ease-in-out;
   text-decoration: none;
   color: rgba(239, 234, 144, 0.953);
 }
+
 .logoDashboard{
   background-color: rgba(52, 50, 26, 0.953);
   position: absolute;
@@ -131,16 +138,94 @@ transition: all 1s ease-in-out;
 .missaoContainer,
 .visaoContainer,
 .diferencasContainer {
-  /* height: 800px; */
-  padding: 30px;
+  height: 1000px;
+  padding: 150px 80px 80px 80px;
   display: grid;
   grid-template-columns: 65fr 35fr;
   background-color: rgb(39, 39, 20);
-  column-gap: 10px;
+  column-gap: 15px;
   justify-content: space-between;
   color: white;
-  padding-bottom: 50px;
 }
+
+@keyframes directorSlider {
+  0%{
+    visibility: visible;
+    /* transform: translateX(0); */
+    /* background-color: pink; */
+    /* transform: translateX(-20px); */
+  }
+  50%{
+    /* background-color: yellow; */
+    visibility: visible;
+    /* transform: translateX(-150%); */
+    /* display: none; */
+    /* visibility: hidden; */
+  }
+
+  /* 55%{
+    /* display: none; */
+    /* visibility: visible; */
+    /* background-color: transparent;
+    border: transparent; */
+    /* transform: translateX(110%); */
+    /* transform: translateX(1500px); */
+  /* } */ 
+
+  100%{
+    visibility: visible;
+    /* display: flex; */
+    /* background-color: blue; */
+    transform: translateX(0);
+    /* left:0; */
+  }
+}
+
+.diretoresContainer{
+  /* padding: 100px; */
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  overflow-x: hidden;
+}
+
+.diretoresContainer h1{
+  padding: 0 0 100px 100px;
+  align-self: flex-start;
+}
+
+.sliderContainer{
+  /* margin-top: 1rem; */
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+  overflow-x:scroll;
+  border-bottom: 10px dashed rgba(52, 50, 26, 0.953);
+  border-top: 10px dashed rgba(52, 50, 26, 0.953);
+  border-width: 5px;
+  background-color: yellow;
+  height: 250px;
+}
+
+.sliderContainer div{
+  height: 100%;
+  width:300px;
+  background-color: green;
+  /* margin: 10px; */
+  /* animation-name:directorSlider; */
+  /* animation-duration: 40s; */
+  /* animation-delay: 0.5ms; */
+  /* animation-timing-function:; */
+  /* animation-timing-function:n; */
+  /* animation-iteration-count: infinite; */
+}
+
+
+
 
 .diferencasContainer{
   /* background-color:rgb(173, 53, 53); */
@@ -179,6 +264,7 @@ transition: all 1s ease-in-out;
   text-align: center;
   font-size: calc(30pt + 50%);
 }
+
 .dashboardMenu{
   background-color: white;
   width: 300px;
@@ -231,8 +317,6 @@ gap: 30px;
   color: white;
   /* background-color:rgba(229, 223, 104, 0.953); */
 }
-
-
 
 .dashboardMenu ul li a{
   overflow-x: hidden;
@@ -290,7 +374,8 @@ gap: 30px;
 .picContainer {
   background-color: rgb(103, 103, 49);
   border-radius: 16px;
-
+  height: 700px;
+  width: 500px;
 }
 
 .slideContainer {
@@ -303,6 +388,9 @@ gap: 30px;
   margin-top: 40px;
   gap:10px;
   background-color: rgb(103, 103, 49);
+  /* background: rgb(103, 103, 49); */
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
   width: 300px;
   padding: 30px;
 }
@@ -406,8 +494,24 @@ button{
 }
 
 .anunciosContainer{
+  height: 600px;
+  overflow-y: scroll;
   gap: 10px;
+  border-radius: 8px;
+  border:1px solid rgb(103, 103, 49);
 }
+
+::-webkit-scrollbar{
+  background-color: white;
+  border-radius: 8px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(103, 103, 49);
+  border-radius: 8px;
+}
+
 #anuncioData{
   text-align: end;
   color:red;
@@ -503,6 +607,7 @@ border-radius: 50%;
   border-radius: 5px;
   padding: 5px;
 }
+
 #studentProfileContainerNome{align-self: center;}
 .dashboardItems{
   gap: 20px;
@@ -515,6 +620,26 @@ border-radius: 50%;
   width:300px;
   height:300px;
   background-color: red;
+}
+
+.notaYearContainer{
+  padding: 10px;
+  background-color: white;
+}
+
+.notaYearHeader{
+justify-content: space-between;
+padding: 5px;
+color:white;
+background-color: rgb(103, 103, 49);
+margin-bottom: 10px;
+}
+
+.notasContainer{
+  height: 600px;
+  overflow-y: auto;
+  gap:10px;
+  padding: 10px;
 }
 
 @media screen and (min-width:964px) {
@@ -548,4 +673,46 @@ border-radius: 50%;
   .menuContainer{
     left: -100%;
   }
+}
+
+@media screen and (max-width:350px) {
+  .boasVindasContainer h1{
+    font-size: calc(15pt + 50%);
+  }
+  .boasVindasContainer h2{
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(168, 27, 27);
+  }
+
+  .slideContainer {
+    height: 260px;
+  }
+
+}
+
+@media screen and (max-width:768px){
+.missaoContainer,
+.visaoContainer,
+.diferencasContainer{
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  padding: 20px;
+  gap: 15px;
+  color: white;
+}
+
+.visaoContainer{
+  flex-direction: column-reverse;
+}
+
+.diferencasContainer,
+.visaoContainer{
+  color:black;
+}
+
+.picContainer{
+  width: 100%;
+}
 }
