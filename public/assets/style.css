@@ -151,26 +151,26 @@ transition: all 1s ease-in-out;
 @keyframes directorSlider {
   0%{
     visibility: visible;
-    /* transform: translateX(0); */
+    transform: translateX(0);
     /* background-color: pink; */
     /* transform: translateX(-20px); */
   }
   50%{
     /* background-color: yellow; */
     visibility: visible;
-    /* transform: translateX(-150%); */
+    transform: translateX(-1500px);
     /* display: none; */
-    /* visibility: hidden; */
+    visibility: hidden;
   }
 
-  /* 55%{
+  55%{
     /* display: none; */
-    /* visibility: visible; */
+    visibility: visible;
     /* background-color: transparent;
     border: transparent; */
     /* transform: translateX(110%); */
-    /* transform: translateX(1500px); */
-  /* } */ 
+    transform: translateX(1500px);
+  } 
 
   100%{
     visibility: visible;
@@ -182,7 +182,7 @@ transition: all 1s ease-in-out;
 }
 
 .diretoresContainer{
-  /* padding: 100px; */
+  padding-bottom: 50px;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -192,7 +192,7 @@ transition: all 1s ease-in-out;
 }
 
 .diretoresContainer h1{
-  padding: 0 0 100px 100px;
+  padding: 100px 0 100px 100px;
   align-self: flex-start;
 }
 
@@ -203,25 +203,31 @@ transition: all 1s ease-in-out;
   display: flex;
   /* justify-content: center; */
   gap: 20px;
-  overflow-x:scroll;
-  border-bottom: 10px dashed rgba(52, 50, 26, 0.953);
-  border-top: 10px dashed rgba(52, 50, 26, 0.953);
+  overflow-x:hidden;
+  border-bottom: 10px dashed rgba(255, 255, 255, 0.953);
+  border-top: 10px dashed rgba(255,255, 255, 0.953);
   border-width: 5px;
-  background-color: yellow;
-  height: 250px;
+  background-color: rgba(36, 34, 17, 0.953);
+  height: 500px;
 }
 
 .sliderContainer div{
   height: 100%;
   width:300px;
-  background-color: green;
+  background-color: white;
   /* margin: 10px; */
-  /* animation-name:directorSlider; */
-  /* animation-duration: 40s; */
-  /* animation-delay: 0.5ms; */
+  border-radius: 50px;
+  animation-name:directorSlider;
+  animation-duration: 40s;
+  animation-delay: 0.5ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  font-size: 50px;
   /* animation-timing-function:; */
   /* animation-timing-function:n; */
-  /* animation-iteration-count: infinite; */
+  animation-iteration-count: infinite;
 }
 
 
@@ -263,6 +269,10 @@ transition: all 1s ease-in-out;
 .boasVindasContainer h1{
   text-align: center;
   font-size: calc(30pt + 50%);
+}
+.boasVindasContainer h2{
+  padding: 10px;
+  /* text-align: center; */
 }
 
 .dashboardMenu{
@@ -680,7 +690,7 @@ margin-bottom: 10px;
     font-size: calc(15pt + 50%);
   }
   .boasVindasContainer h2{
-    padding-top: 10px;
+    padding: 10px;
     text-align: center;
     color: rgb(168, 27, 27);
   }
