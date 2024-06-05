@@ -3,11 +3,11 @@ import pageFinder from './module/pageFinder.js';
 const routes = (route) => {
     let page = undefined;
     switch (route) {
-        case '/assets/style.css':
-        case '/assets/index.js':
-        case '/favicon.ico':
-            page='';
-            break;
+        // case '/assets/style.css':
+        // case '/assets/index.js':
+        // case '/favicon.ico':
+        //     page='';
+        //     break;
         case '/':
         case '/home':
             page = pageFinder("./view/index.html");
