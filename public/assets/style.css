@@ -32,6 +32,7 @@ body {
   padding: 10px 0 10px 0;
   /* background-color: rgba(52, 50, 26, 0.953); */
   background: brown;
+  z-index: 2000;
 }
 
 nav{
@@ -146,6 +147,48 @@ transition: all 1s ease-in-out;
   column-gap: 15px;
   justify-content: space-between;
   color: white;
+  overflow-x: hidden;
+}
+
+.missaoContainer .picContainer,
+.visaoContainer .picContainer,
+.diferencasContainer .picContainer
+{
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+
+.missaoContainer .picContainer,
+.diferencasContainer .picContainer
+{
+  right: -200%;
+}
+
+.visaoContainer .picContainer{
+  box-shadow: 0 0 20px 10px brown;  
+}
+.missaoContainer .picContainer{
+  box-shadow: 0 0 20px 10px white;
+}
+
+.diferencasContainer .picContainer{
+  box-shadow: 0 0 20px 10px black;
+}
+
+
+.visaoContainer .picContainer{
+left: -200%;
+}
+
+
+.missaoContainer:hover > .picContainer,
+.diferencasContainer:hover > .picContainer
+{
+  right: 0;
+}
+
+.visaoContainer:hover > .picContainer{
+  left: 0;
 }
 
 @keyframes directorSlider {
@@ -745,4 +788,109 @@ margin-bottom: 10px;
 
 .logo:hover{
   box-shadow: 0 0 10px 10px rgb(160, 43, 43);
+}
+.wellcome{
+  position: fixed;
+  top:0;
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: brown;
+  opacity: 0.97;
+  z-index: 5000;
+  color:white;
+}
+
+.wellcomeContent{
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.wellcomeContent h1{
+  padding: 8px;
+}
+
+@keyframes circulator {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(35deg);
+  }
+
+  55%{
+    transform: rotate(70deg);
+  } 
+  
+  70%{
+    transform: rotate(110deg);
+  } 
+
+  75%{
+    transform: rotate(150deg);
+  } 
+
+  79%{
+    transform: rotate(180deg);
+  } 
+  
+  80%{
+    transform: rotate(210deg);
+  }  
+
+  83%{
+    transform: rotate(245deg);
+  }
+
+  89%{
+    transform: rotate(270deg);
+  }
+
+  90%{
+    transform: rotate(280deg);
+  }
+  
+  93%{
+    transform: rotate(300deg);
+  }
+  95%{
+    transform: rotate(345deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.circle{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 10pt;
+  padding: 10px;
+  border: 5px dashed white;
+  animation-name: circulator;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+.circle img{
+  position: absolute;
+  width:100%;
+  height: 100%;
+}
+
+.hide{
+  display: none;
 }

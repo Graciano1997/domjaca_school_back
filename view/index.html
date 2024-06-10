@@ -55,7 +55,7 @@
     </div>
     <main class="mainPageContainer">
         <section class="boasVindasContainer flexV">
-            <h1>Seja Bem Vindo a Nova Era da Escola Dom Jaca</h1>
+            <h1>Nova era digital da Escola Dom Jaca</h1>
             <h2>Agora estamos mais próximo de ti.</h2>
         </section>
          <section class="slideContainer">
@@ -119,6 +119,22 @@
     <footer class="footerContainer">
         <p>Desenvolvido Por Graciano Manuel Henrique</p>
     </footer>
+    <div class="wellcome">
+        <div class="circle">
+            <img class="logo" src="/assets/img/logo.jpg" alt="Dom Jaca">
+        </div>
+        <div class="wellcomeContent">
+            <h1>Seja bem vindo</h1>
+            <h1>à escola</h1>
+            <h1>Dom Jaca</h1>
+        </div>
+    </div>
     <script src="/assets/index.js" type="module"></script>
+    <script>
+        const circle=document.querySelector('.wellcome');
+        setTimeout(()=>{
+            circle.classList.add('hide');
+        },2000)
+    </script>
 </body>
 </html>
