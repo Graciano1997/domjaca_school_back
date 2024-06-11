@@ -1,12 +1,9 @@
-import express from "express";
-// import path, { dirname } from "path";
-import pageFinder from "./module/pageFinder.js";
-
+const express=require("express");
+const pageFinder=require("./module/pageFinder");
 const app=express();
 
 app.use(express.static('public'));
 
-app.use('portal/',require('./Routes/portal'));
 
 app.get('/acerca',(request,response)=>{
   const page=pageFinder('./view/acerca.html');
@@ -48,11 +45,7 @@ app.get('/login',(request,response)=>{
    response.status(200).end(page);
 });
 
-app.get('/dashboard',(request,response)=>{
-  const page=pageFinder('./view/dashboard/dashboard.html');
-   response.status(200).end(page);
-});
-
+app.use('/portal',require('./Routes/portal'));
 
 app.use((request,response,next)=>{
   const page=pageFinder('./view/404.html');

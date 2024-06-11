@@ -1,4 +1,5 @@
-import fs from 'node:fs';
+
+const fs = require('fs');
 
 const pageFinder = (path) => {
   try {
@@ -13,4 +14,4 @@ const pageFinder = (path) => {
   }
 };
 
-export default pageFinder;
+module.exports = pageFinder;
