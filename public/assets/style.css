@@ -328,6 +328,8 @@ left: -200%;
   padding-left: 15px;
   overflow-x: hidden;
    padding-top: 50px;
+   transition: all 2s ease-in-out;
+   left: 0;
 }
 
 .dashboardMenu ul{
@@ -842,6 +844,12 @@ font-size: 14px;
 
 .picContainer{
   width: 100%;
+}
+.dashboardMenu{
+  position: fixed;
+  height: 100%;
+  left: -100%;
+  transition: all 2s ease-in-out;
 }
 }
 
