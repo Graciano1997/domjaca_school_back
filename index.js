@@ -6,6 +6,8 @@ const app=express();
 
 app.use(express.static('public'));
 
+app.use('portal/',require('./Routes/portal'));
+
 app.get('/acerca',(request,response)=>{
   const page=pageFinder('./view/acerca.html');
   response.status(200).end(page);
@@ -41,9 +43,20 @@ app.get('/',(request,response)=>{
    response.status(200).end(page);
 });
 
+app.get('/login',(request,response)=>{
+  const page=pageFinder('./view/dashboard/login.html');
+   response.status(200).end(page);
+});
+
+app.get('/dashboard',(request,response)=>{
+  const page=pageFinder('./view/dashboard/dashboard.html');
+   response.status(200).end(page);
+});
+
+
 app.use((request,response,next)=>{
   const page=pageFinder('./view/404.html');
-   response.status(200).end(page);
+   response.status(404).end(page);
 })
 
 app.listen(3000,"0.0.0.0",()=>{
