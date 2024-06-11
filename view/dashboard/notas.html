@@ -8,7 +8,7 @@
 </head>
 <body>
     <main class="dashboardContainer flexH">
-        <div class="dashboardMenu">
+        <div class="dashboardMenu hide">
             <ul class="flexV">
                 <li><a href="/portal">Inicial</a></li>
                 <li><a href="/portal/aproveitamento">Aproveitamento</a></li>
@@ -22,18 +22,20 @@
 
         <div class="mainArea">
             <div class="studentHeader">
-                <h1>Suas Notas</h1>
-                <div>
+                <button>H</button>
+                <div class="portalAvatarContainer">
                     <img src="/users/gra.jpg" alt="user-Avatar">
                 </div>
             </div>
+            <h1 class="portalArea">*Notas</h1>
             <section class="notasContainer flexV">
                <div class="notaYearContainer flexV">
                 <div class="notaYearHeader flexH">
                     <h2>6º Classe</h2>
-                    <h2>Ano Lectivo: 2022</h2>
+                    <h2>Ano: 2022</h2>
+                    <button class="seeMarks">Ver</button>
                 </div>
-                    <div>
+                    <div class="pontuationContainer">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
@@ -41,32 +43,33 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
                     </div>
                 </div>
-               <div class="notaYearContainer flexV">
-                <div class="notaYearHeader flexH">
-                    <h2>7º Classe</h2>
-                    <h2>Ano Lectivo: 2023</h2>
-                </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
+                <div class="notaYearContainer flexV">
+                    <div class="notaYearHeader flexH">
+                        <h2>6º Classe</h2>
+                        <h2>Ano: 2022</h2>
+                        <button class="seeMarks">Ver</button>
                     </div>
-                </div>
-               <div class="notaYearContainer flexV">
-                <div class="notaYearHeader flexH">
-                    <h2>8º Classe</h2>
-                    <h2>Ano Lectivo: 2024</h2>
-                </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                    </div>
-                </div>
+                        <div class="pontuationContainer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
+                        </div>
+                    </div> <div class="notaYearContainer flexV">
+                        <div class="notaYearHeader flexH">
+                            <h2>6º Classe</h2>
+                            <h2>Ano: 2022</h2>
+                            <button class="seeMarks">Ver</button>
+                        </div>
+                            <div class="pontuationContainer">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
+                            </div>
+                        </div>
             </section>
            
         </div>

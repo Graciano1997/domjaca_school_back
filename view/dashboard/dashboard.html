@@ -8,7 +8,7 @@
 </head>
 <body>
     <main class="dashboardContainer flexH">
-        <div class="dashboardMenu">
+        <div class="dashboardMenu hide">
             <ul class="flexV">
                 <li><a href="/portal">Inicial</a></li>
                 <li><a href="/portal/aproveitamento">Aproveitamento</a></li>
@@ -22,11 +22,12 @@
 
         <div class="mainArea">
             <div class="studentHeader">
-                <h1>Portal do Estudante</h1>
-                <div>
+                <button>H</button>
+                <div class="portalAvatarContainer">
                     <img src="/users/gra.jpg" alt="user-Avatar">
                 </div>
             </div>
+            <h1 class="portalArea">*Seu Portal</h1>
             <div class="dashboardItems flexH ">
                 <div></div>
                 <div></div>
@@ -37,6 +38,26 @@
     <footer class="footerContainer">
         <p>Desenvolvido Por Graciano Manuel Henrique</p>
     </footer>
+    <div class="wellcomeUser">
+        <div class="wellcomeWrapper flexV">
+            <div class="wellcomeAvatarWrapper">
+                <img src="/users/gra.jpg" alt="user-Avatar">
+            </div>
+            <div class="wellcomedetails flexV">
+                <h2>Seja Bem vindo</h2>
+                <h2>Graciano Henrique</h2>
+            </div>
+            <div class="wellcomeInfo flexV">
+                <p>c inventore facere odio autem blanditiis, provident repudiandae est dicta assumenda veniam optio veritatis dolorum eos?</p>
+            </div>
+            <button id="btnContinue">Continuar</button>
+        </div>
+    </div>
     <script src="./assets/index.js" type="module"></script>
+    <script>
+        document.querySelector("#btnContinue").addEventListener("click",()=>{
+         document.querySelector(".wellcomeUser").classList.add('unshow');   
+        })
+    </script>
 </body>
 </html>
