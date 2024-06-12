@@ -1,82 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Portal do Estudante - Notas</title>
-</head>
-<body>
-    <main class="dashboardContainer flexH">
-        <div class="dashboardMenu">
-            <ul class="flexV">
-                <li><a href="/portal">Inicial</a></li>
-                <li><a href="/portal/aproveitamento">Aproveitamento</a></li>
-                <!-- <li><a href="/estudantes_honra">Confirmações</a></li> -->
-                <!-- <li><a href="/anuncios">Nóticias e Anúncios </a></li> -->
-                <li><a href="/portal/notas">Notas</a></li>
-                <li><a href="/portal/perfil">Seu Perfil</a></li>
-                <li><a href="/" id="sair">Terminar Sessão</a></li>
-            </ul>
-        </div>
 
-        <div class="mainArea">
-            <div class="studentHeader">
-                <button>H</button>
-                <div class="portalAvatarContainer">
-                    <img src="/users/gra.jpg" alt="user-Avatar">
-                </div>
-            </div>
-            <h1 class="portalArea">*Notas</h1>
-            <section class="notasContainer flexV">
-               <div class="notaYearContainer flexV">
-                <div class="notaYearHeader flexH">
-                    <h2>6º Classe</h2>
-                    <h2>Ano: 2022</h2>
-                    <button class="seeMarks">Ver</button>
-                </div>
-                    <div class="pontuationContainer">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                    </div>
-                </div>
-                <div class="notaYearContainer flexV">
-                    <div class="notaYearHeader flexH">
-                        <h2>6º Classe</h2>
-                        <h2>Ano: 2022</h2>
-                        <button class="seeMarks">Ver</button>
-                    </div>
-                        <div class="pontuationContainer">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                        </div>
-                    </div> <div class="notaYearContainer flexV">
-                        <div class="notaYearHeader flexH">
-                            <h2>6º Classe</h2>
-                            <h2>Ano: 2022</h2>
-                            <button class="seeMarks">Ver</button>
-                        </div>
-                            <div class="pontuationContainer">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus perspiciatis laudantium? Odio, incidunt.</p>
-                            </div>
-                        </div>
-            </section>
-           
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Portal do Estudante - Notas</title>
+</head>
+
+<body>
+  <main class="dashboardContainer flexH">
+    <div class="dashboardMenu">
+      <button class="portalCloseBtn">X</button>
+      <ul class="flexV">
+        <li><a href="/portal">Inicial</a></li>
+        <li><a href="/portal/aproveitamento">Aproveitamento</a></li>
+        <!-- <li><a href="/estudantes_honra">Confirmações</a></li> -->
+        <!-- <li><a href="/anuncios">Nóticias e Anúncios </a></li> -->
+        <li><a href="/portal/notas">Notas</a></li>
+        <li><a href="/portal/perfil">Seu Perfil</a></li>
+        <li><a href="/" id="sair">Terminar Sessão</a></li>
+      </ul>
+    </div>
+
+    <div class="mainArea">
+      <div class="studentHeader">
+        <button class="portalHamburguer">H</button>
+        <h1 class="portalAreaDesk">Notas</h1>
+        <div class="portalAvatarContainer">
+          <img src="/users/gra.jpg" alt="user-Avatar">
         </div>
-    </main>
-    <footer class="footerContainer">
-        <p>Desenvolvido Por Graciano Manuel Henrique</p>
-    </footer>
-    <script src="./assets/index.js" type="module"></script>
+      </div>
+      <h1 class="portalArea">*Notas</h1>
+      <section class="notasContainer flexV">
+        <div class="notaYearContainer flexV">
+          <div class="notaYearHeader flexH">
+            <h2>6º Classe</h2>
+            <h2>Ano: 2022</h2>
+            <button class="seeMarks">Ver</button>
+          </div>
+          <div class="pontuationContainer">
+            <div class="subjectsHeader">
+              <div>
+                <h4>Disciplina</h4>
+              </div>
+              <div class="notas ">
+                <h4>P1</h4>
+                <h4>P2</h4>
+                <h4>T1</h4>
+
+                <h4>P1</h4>
+                <h4>P2</h4>
+                <h4>T2</h4>
+
+
+                <h4>P1</h4>
+                <h4>P2</h4>
+                <h4>T3</h4>
+
+                <h4>MF</h4>
+              </div>
+            </div>
+
+
+                <div class="subjectsBody">
+                  <div>
+                    <h4>Matemática</h4>
+                  </div>
+
+                  <div class="notas">
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+
+                    
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+  
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                  </div>
+                </div>
+                <div class="subjectsBody">
+                  <div>
+                    <h4>L.Portuguesa</h4>
+                  </div>
+
+                  <div class="notas">
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+
+                    
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+  
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                  </div>
+                </div>
+                <div class="subjectsBody">
+                  <div>
+                    <h4>Física</h4>
+                  </div>
+
+                  <div class="notas">
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+
+                    
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+  
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                  </div>
+                </div>
+                <div class="subjectsBody">
+                  <div>
+                    <h4>Química</h4>
+                  </div>
+
+                  <div class="notas">
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+
+                    
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+  
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                  </div>
+                </div>
+                <div class="subjectsBody">
+                  <div>
+                    <h4>Biologia</h4>
+                  </div>
+
+                  <div class="notas">
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+
+                    
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+  
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                  </div>
+                </div>
+                <div class="subjectsBody">
+                  <div>
+                    <h4>Inglês</h4>
+                  </div>
+
+                  <div class="notas">
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+
+                    
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+  
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                  </div>
+                </div>
+                <div class="subjectsBody">
+                  <div>
+                    <h4>História</h4>
+                  </div>
+
+                  <div class="notas">
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+
+                    
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+  
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                  </div>
+                </div>
+                <div class="subjectsBody">
+                  <div>
+                    <h4>EMC</h4>
+                  </div>
+
+                  <div class="notas">
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+
+                    
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+  
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                  </div>
+                </div>
+                <div class="subjectsBody">
+                  <div>
+                    <h4>EVP</h4>
+                  </div>
+
+                  <div class="notas">
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+
+                    
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+  
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                  </div>
+                </div>
+                <div class="subjectsBody">
+                  <div>
+                    <h4>Ed.Laboral</h4>
+                  </div>
+
+                  <div class="notas">
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+
+                    
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+  
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                  </div>
+                </div>
+                <div class="subjectsBody">
+                  <div>
+                    <h4>Ed.Física</h4>
+                  </div>
+
+                  <div class="notas">
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+
+                    
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+  
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                  </div>
+                </div>
+                <div class="subjectsBody">
+                  <div>
+                    <h4>Geografia</h4>
+                  </div>
+
+                  <div class="notas">
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+
+                    
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+  
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                    <h4>10</h4>
+                  </div>
+                </div>
+                <!-- <tr>
+                  <th>Português</th>
+                  
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                </tr> -->
+              <!-- </tbody>
+            </table> -->
+          </div>
+        </div>
+        <div class="notaYearContainer flexV">
+          <div class="notaYearHeader flexH">
+            <h2>6º Classe</h2>
+            <h2>Ano: 2022</h2>
+            <button class="seeMarks">Ver</button>
+          </div>
+          <div class="pontuationContainer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam
+              suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus
+              perspiciatis laudantium? Odio, incidunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam
+              suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus
+              perspiciatis laudantium? Odio, incidunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam
+              suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus
+              perspiciatis laudantium? Odio, incidunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam
+              suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus
+              perspiciatis laudantium? Odio, incidunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam
+              suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus
+              perspiciatis laudantium? Odio, incidunt.</p>
+          </div>
+        </div>
+        <div class="notaYearContainer flexV">
+          <div class="notaYearHeader flexH">
+            <h2>6º Classe</h2>
+            <h2>Ano: 2022</h2>
+            <button class="seeMarks">Ver</button>
+          </div>
+          <div class="pontuationContainer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam
+              suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus
+              perspiciatis laudantium? Odio, incidunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam
+              suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus
+              perspiciatis laudantium? Odio, incidunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam
+              suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus
+              perspiciatis laudantium? Odio, incidunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam
+              suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus
+              perspiciatis laudantium? Odio, incidunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi, libero illo id sequi, laboriosam
+              suscipit necessitatibus praesentium quasi voluptate neque dignissimos soluta quos nostrum minus
+              perspiciatis laudantium? Odio, incidunt.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <footer class="footerContainer">
+    <p>Desenvolvido Por Graciano Manuel Henrique</p>
+  </footer>
+  <script src="./assets/index.js" type="module"></script>
 </body>
+
 </html>
