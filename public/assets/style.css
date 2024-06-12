@@ -338,6 +338,8 @@ left: -200%;
    padding-top: 50px;
    transition: all 2s ease-in-out;
    left: 0;
+   display: flex;
+   flex-direction: column;
 }
 
 .seeMarks{
@@ -880,6 +882,7 @@ font-size: 14px;
 
 .dashboardMenu{
   background-color:rgba(30, 30, 8, 0.766);
+  backdrop-filter: blur(20px);
   position: fixed;
   top: 0;
   left:-110%;
@@ -917,6 +920,7 @@ font-size: 14px;
 }
 
 .dashboardMenu ul{
+  margin-top: 15px;
   width: 70%;
   gap:15px;
 }
@@ -927,6 +931,7 @@ font-size: 14px;
   height:60px;
 }
 
+
 .logo{
   width:100%;
   height: 100%;
@@ -936,7 +941,7 @@ font-size: 14px;
 }
 
 .logo:hover{
-  box-shadow: 0 0 10px 10px rgb(160, 43, 43);
+  box-shadow: 0 0 20px 5px rgb(160, 43, 43);
 }
 .wellcome{
   position: fixed;
@@ -1173,4 +1178,17 @@ margin: 2px 0 2px 0;
 grid-template-columns: repeat(10,10fr);
   /* display: flex;
   justify-content: space-around; */
+}
+.logoPortal{
+  margin-top: -30px;
+margin-bottom: 1rem;
+  width:90px;
+  height:90px;
+align-self: center;
+}
+
+.logoPortal img{
+  border: 1px solid brown;
+  width: 100%;
+  height: 100%;
 }
