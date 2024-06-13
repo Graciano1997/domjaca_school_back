@@ -544,7 +544,8 @@ gap: 30px;
   outline-color:rgb(103, 103, 49);
 }
 
-.loginContainer button{
+.loginContainer button,
+.formMatricula button{
   align-self: center;
   width:90px;
 }
