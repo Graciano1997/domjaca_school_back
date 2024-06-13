@@ -506,12 +506,10 @@ gap: 30px;
 }
 
 .loginContainer{
-  margin-top: 40px;
+  /* margin-top: 40px; */
   gap:10px;
-  background-color: rgb(103, 103, 49);
-  /* background: rgb(103, 103, 49); */
-  backdrop-filter: blur(15px);
-  border-radius: 16px;
+
+  border-radius: 8px;
   /* width: 300px; */
   padding: 30px;
 }
@@ -545,6 +543,11 @@ gap: 30px;
   /* outline: none; */
   outline-color:rgb(103, 103, 49);
 }
+
+.loginContainer button{
+  align-self: center;
+  width:90px;
+}
 #sloga{
   padding: 0.5rem;
   text-align: justify;
@@ -566,7 +569,12 @@ gap: 30px;
 }
 
 .login{
-  height: 400px;
+  background-color:rgba(165, 42, 42, 0.925);
+  backdrop-filter: blur(50px);
+  height: 300px;
+  border-radius: 8px;
+  width: 350px;
+  align-self: flex-start;
 }
 
 .login a{
@@ -700,8 +708,10 @@ em{
 }
 
 .loginContainerSection{
+  margin-top: 2rem;
 display: flex;
-justify-content: center;
+background-color: green;
+width:350px;
 }
 
 .studentProfileContainer{
@@ -940,6 +950,17 @@ font-size: 14px;
   transition: all 1s ease-in-out;
 }
 
+.loginWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  padding: 50px;
+  background-color: rgba(36, 33, 33, 0.918);
+  backdrop-filter: blur(20px);
+}
+
 .logo:hover{
   box-shadow: 0 0 20px 5px rgb(160, 43, 43);
 }
@@ -1155,7 +1176,7 @@ tbody tr th{
 }
 .subjectsHeader,
 .subjectsBody{
-  background-color: black;
+  background-color: brown;
   color:white;
   /* width: 100%; */
   display: grid;
