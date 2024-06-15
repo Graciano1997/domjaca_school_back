@@ -1,41 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/style.css">
-  <title>Portal do Estudante - Notas</title>
-</head>
-
+<%- include('../components/Header',{title:"Portal do Estudante"}) %>
 <body>
   <main class="dashboardContainer flexH">
-    <div class="dashboardMenu">
-      <button class="portalCloseBtn">X</button>
-      <div class="logoPortal">
-        <a href="/">
-            <img class="logo" src="/assets/img/logo.jpg" alt="Dom Jaca">
-        </a>
-    </div>
-      <ul class="flexV">
-        <li><a href="/portal">Inicial</a></li>
-        <li><a href="/portal/aproveitamento">Aproveitamento</a></li>
-        <!-- <li><a href="/estudantes_honra">Confirmações</a></li> -->
-        <!-- <li><a href="/anuncios">Nóticias e Anúncios </a></li> -->
-        <li><a href="/portal/notas">Notas</a></li>
-        <li><a href="/portal/perfil">Seu Perfil</a></li>
-        <li><a href="/" id="sair">Terminar Sessão</a></li>
-      </ul>
-    </div>
-
+    <%- include('../components/DashboardMenu') %>
     <div class="mainArea">
-      <div class="studentHeader">
-        <button class="portalHamburguer">H</button>
-        <h1 class="portalAreaDesk">Notas</h1>
-        <div class="portalAvatarContainer">
-          <img src="/users/gra.jpg" alt="user-Avatar">
-        </div>
-      </div>
+      <%- include('../components/DashboardHeader') %>
+
       <h1 class="portalArea">*Notas</h1>
       <section class="notasContainer flexV">
         <div class="notaYearContainer flexV">
@@ -1179,10 +1148,4 @@
 
     </div>
   </main>
-  <footer class="footerContainer">
-    <p>Desenvolvido Por Graciano Manuel Henrique</p>
-  </footer>
-  <script src="./assets/index.js" type="module"></script>
-</body>
-
-</html>
+  <%- include('../components/Footer')%>

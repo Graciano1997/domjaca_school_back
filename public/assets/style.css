@@ -576,6 +576,7 @@ gap: 30px;
   border-radius: 8px;
   width: 350px;
   align-self: flex-start;
+  transition: all 1s ease-in-out;
 }
 
 .login a{
@@ -691,6 +692,7 @@ em{
   padding: 8px;
   transition: all 1s ease-in-out;
   cursor:pointer;
+  margin-top: 10px;
 }
 .menuItem ul li:hover{
   background-color: rgb(168, 168, 78);
@@ -747,6 +749,7 @@ height:150px;
   font-size: 12px;
 }
 .studentProfileContainer ul li{
+  /* margin-top: 5px; */
   background-color: rgb(103, 103, 49);
   color:white;
   border-radius: 5px;
@@ -763,6 +766,7 @@ height:150px;
 }
 
 .dashboardItems div{
+  margin: 10px;
   width:300px;
   height:300px;
   border-radius: 16px;
@@ -878,6 +882,11 @@ font-size: 14px;
 .picContainer{
   width: 100%;
 }
+
+.login{
+  align-self: center;
+  transition: all 1s ease-in-out;
+}
 /* .dashboardMenu{
   position: fixed;
   height: 100%;
@@ -934,6 +943,9 @@ font-size: 14px;
   margin-top: 15px;
   width: 70%;
   gap:15px;
+}
+.dashboardMenu ul li{
+  margin-top: 15px;
 }
 }
 
