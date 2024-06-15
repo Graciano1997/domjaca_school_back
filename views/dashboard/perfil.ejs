@@ -4,13 +4,17 @@
         <%- include('../components/DashboardMenu') %>
 
         <div class="mainArea flexV">
-            <%- include('../components/DashboardHeader') %>
+            <%- include('../components/DashboardHeader',{headerArea:"Seu Perfil"}) %>
             <h1 class="portalArea">*Perfil</h1>
             <div class="studentProfileContainer flexV">
                 <div class="profilePic">
                     <img src="/users/gra.jpg" alt="user-Avatar">
                 </div>
-                <h3 id="studentProfileContainerNome">Graciano Henrique</h3>
+                <form action="" class="avatarForm flexV">
+                    <label for="foto">Carregar Foto</label>
+                    <input type="file" name="foto" id="foto">
+                </form>
+                <!-- <h3 id="studentProfileContainerNome">Graciano Henrique</h3> -->
                 <ul class="flexV">
                     <li>
                         <h4>Turma: A</h4>
