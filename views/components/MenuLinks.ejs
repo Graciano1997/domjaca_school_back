@@ -1,13 +1,23 @@
-    <li><a href="/">Inicial</a></li>
+    <li><a href="/"><%=__('Home')%></a></li>
     <li class=<%=`${separator}`%>><div class="separator"></div></li>
-    <li><a href="/domjaca/acerca">Sobre nós</a></li>
+    <li><a href="/domjaca/acerca"><%=__('AboutUs')%></a></li>
      <li class=<%=`${separator}`%>><div class="separator"></div></li>
-    <li><a href="/domjaca/anuncios">Anúncios</a></li>
+    <li><a href="/domjaca/anuncios"><%=__('News')%></a></li>
      <li class=<%=`${separator}`%>><div class="separator"></div></li>
-    <li><a href="/domjaca/estudantes_honra">Estudantes de Honra</a></li>
+    <li><a href="/domjaca/estudantes_honra"><%=__('HonorsStudents')%></a></li>
      <li class=<%=`${separator}`%>><div class="separator"></div></li>
-    <li><a href="/domjaca/novas_matriculas_confirmacoes">Matriculas/Confirmações</a></li>
+    <li><a href="/domjaca/novas_matriculas_confirmacoes"><%=__('Enrollment')%></a></li>
      <li class=<%=`${separator}`%>><div class="separator"></div></li>
-    <li><a href="/domjaca/portal_estudante">Portal do Estudante</a></li>
+    <li><a href="/domjaca/portal_estudante"><%=__('StudentPortal')%></a></li>
      <li class=<%=`${separator}`%>><div class="separator"></div></li>
-    <li><a href="/domjaca/alums">Alums</a></li>
+    <li><a href="/domjaca/alums"><%=__('Alums')%></a></li>
+    <li class=<%=`${separator}`%>><div class="separator"></div></li>
+    <!-- <li>  -->
+        <select name="" id="lang" onchange="LangHandler(this)">
+            <option value="none" selected disabled><%=__('Language')%></option>
+        <option value="/set-language/pt"><%=__('Pt')%></option>
+        <option value="/set-language/en"><%=__('En')%></option>
+        <option value="/set-language/fr"><%=__('Fr')%></option>
+        <option value="/set-language/es"><%=__('Es')%></option>
+    </select>
+<!-- </li> -->

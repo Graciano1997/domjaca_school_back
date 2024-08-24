@@ -14,10 +14,12 @@
   "author": "Graciano Henrique",
   "license": "MIT",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "i18n": "^0.15.1",
     "mysql": "^2.18.1",
     "nodemon": "^3.1.4"
   },

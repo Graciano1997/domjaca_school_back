@@ -2,14 +2,15 @@
     <%- include('../components/Menus') %>
     <main class="mainPageContainer">
         <section class="boasVindasContainer flexV">
-            <h1>Nova era digital da Escola Dom Jaca</h1>
-            <h2>Agora mais próximo de ti.</h2>
+            <h1><%= __('Welcome') %></h1>
+            <h1><%= __('NewEraDomJaca')%></h1>
+            <h2><%= __('NowNear')%></h2>
         </section>
          <section class="slideContainer">
         </section>
         <section class="missaoContainer">
             <div class="textContainer">
-                <h1>Nossa Missão</h1>
+                <h1><%= __('Mission')%></h1>
                 <p>
                     <span id="quote">"</span>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et porro possimus voluptatum quos ab? Tenetur explicabo ipsum consectetur temporibus doloremque unde cupiditate,
@@ -30,7 +31,7 @@
                 <img src="/assets/img/visao.jpg"/>
             </div>
             <div class="textContainer visao">
-                <h1>Nossa Visão</h1>
+                <h1><%= __('Vision')%></h1>
                 <p>
                     <span id="quote">"</span>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et porro possimus voluptatum quos ab? Tenetur explicabo ipsum consectetur temporibus doloremque unde cupiditate,
@@ -45,7 +46,7 @@
 
         <section class="diferencasContainer">
             <div class="textContainer">
-                <h1>Nossas Diferenças</h1>
+                <h1><%= __('Diffecences')%></h1>
                 <p>
                     <span id="quote">"</span>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et porro possimus voluptatum quos ab? Tenetur explicabo ipsum consectetur temporibus doloremque unde cupiditate,
@@ -69,12 +70,11 @@
             <img class="logo" src="/assets/img/logo.jpg" alt="Dom Jaca">
         </div>
         <div class="wellcomeContent">
-            <h1>Seja bem vindo à escola</h1>
+            <h1><%=__('WelcomeToShool')%></h1>
             <h1>Dom Jaca</h1>
             <blockquote style="padding: 8px; font-size: 14px; font-weight: 700; font-style: italic;">
                 "
-                A educaçã
-                o continua a ser a arma mais poderosa para transformar nossas vidas e deixar a sociedade um lugar melhor!
+                <%=__('Slogan')%>
                 "
             </blockquote>
         </div>
