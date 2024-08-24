@@ -1,8 +1,10 @@
+require("dotenv").config();
+
 const dbConfiguration = {
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "dom_jaca"
+    host: process.env.HOST,
+    user: process.env.USER,
+    password:process.env.PASSWORD,
+    database:process.env.DATABASE
 };
 
 module.exports = { dbConfiguration };

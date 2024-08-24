@@ -4,7 +4,6 @@ router.use(express.static('public'));
 
 router.get('/',(request,response)=>{
     response.render('./dashboard/dashboard');
-    
   });
 
 router.get('/notas',(request,response)=>{
