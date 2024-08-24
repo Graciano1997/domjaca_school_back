@@ -1,58 +1,56 @@
-<%- include('../components/Header',{title:"Dom Jaca Matriculas e Confirmações"}) %>
+<%- include('../components/Header',{title:__('Enrollment')}) %>
 <%- include('../components/Menus') %>
     <main class="homePageContainer">
         <section class="boasVindasContainer flexV">
-            <h1>Área de Mátricula e Confirmação</h1>
-            <h2>Faça a tua mátricula ou confirmação onde estiveres.</h2>
+            <h1><%= __('EnrollmentArea')%></h1>
+            <h2><%= __('Register')%></h2>
         </section>
         <section class="diferencasContainer">
             <div class="textContainer">
-                <h1>Venha Estudar Conosco</h1>
+                <h1><%= __('StudyWithUs')%></h1>
               <form  class="formMatricula flexV">
                 <label for="nome">
-                    Nome Completo
+                    <%= __('FullName')%>
                 </label>
                 <input type="text" name="nome" id="nome">
                 <label for="documentoTipo">
-                    Tipo de Documento
+                    <%= __('DocType')%>
                 </label>
                 <select name="documentoTipo" id="documentoTipo">
-                    <option value="bilhete">Bilhete</option>
-                    <option value="cédula">Cédula</option>
-                    <option value="passaporte">Passaporte</option>
-                    <option value="atestado">Acento de Nascimento</option>
+                    <option value="bilhete"><%= __('IdentityCard')%></option>
+                    <option value="cédula"><%= __('PersonalId')%></option>
+                    <option value="passaporte"><%= __('Passport')%></option>
                 </select>
                 <div class="contatos flexH">
                     <div class="flexV">
-                        <label for="telefone">Tel.Encarregado</label>
+                        <label for="telefone"><%= __('FatherPhone')%></label>
                         <input type="tel" name="telefone" id="telefone" placeholder="ex: 935636086">
                     </div>
                     <div class="flexV">
-                        <label for="telefone">Tel. Estudante</label>
+                        <label for="telefone"><%= __('StudentPhone')%></label>
                         <input type="tel" name="telefone" id="telefone" placeholder="ex: 915678609">
                     </div>
                 </div>
                 <label for="sexo">
-                    Sexo
+                    <%= __('Gender')%>
                 </label>
                 <select name="sexo" id="sexo">
-                    <option value="masculino">Masculino</option>
-                    <option value="femenino">Femenino</option>
+                    <option value="masculino"><%= __('Male')%></option>
+                    <option value="femenino"><%= __('Female')%></option>
                 </select>
                 <label for="classe">
-                    Classe
+                    <%= __('Grade')%>
                 </label>
                 <select name="classe" id="classe">
-                    <option value="0">Inciciação</option>
-                    <option value="1">1ª Classe</option>
-                    <option value="2">2ª Classe</option>
-                    <option value="3">3ª classe</option>
-                    <option value="4">4ª classe</option>
-                    <option value="5">5ª classe</option>
-                    <option value="6">6ª classe</option>
-                    <option value="7">7ª classe</option>
-                    <option value="8">8ª classe</option>
-                    <option value="9">9ª classe</option>
+                    <option value="1">1ª <%= __('Grade')%></option>
+                    <option value="2">2ª <%= __('Grade')%></option>
+                    <option value="3">3ª <%= __('Grade')%></option>
+                    <option value="4">4ª <%= __('Grade')%></option>
+                    <option value="5">5ª <%= __('Grade')%></option>
+                    <option value="6">6ª <%= __('Grade')%></option>
+                    <option value="7">7ª <%= __('Grade')%></option>
+                    <option value="8">8ª <%= __('Grade')%></option>
+                    <option value="9">9ª <%= __('Grade')%></option>
                 </select>
                 <!-- <label for="turno">
                     Turno
@@ -62,20 +60,19 @@
                     <option value="tarde">Tarde</option>
                 </select> -->
                 <label for="matricula">
-                    Mátricula ou Confirmação ?
+                    <%= __('EnrollmentOrConfirmation')%>
                 </label>
                 <select name="matricula" id="matricula">
-                    <option value="matricula">Mátricula</option>
-                    <option value="confirmacao">Confirmação</option>
+                    <option value="matricula"><%= __('Enroll')%></option>
+                    <option value="confirmacao"><%= __('Confirmation')%></option>
                 </select>
-                <label for="foto">Fotografia</label>
+                <label for="foto"><%= __('Photography')%></label>
                 <input type="file" name="foto" id="foto">
-                <label for="documento">Documento</label>
+                <label for="documento"><%= __('Document')%></label>
                 <input type="file" name="documento" id="documento">
-                <label for="documento">Declaração ou Certificado da classe anterior</label>
+                <label for="documento"><%= __('DeclarationOrCertificate')%></label>
                 <input type="file" name="documento" id="documento">
-
-               <button>Salvar</button> 
+               <button><%= __('Save')%></button> 
               </form>
             </div>
             <div class="picContainer matriculaBg"> 
