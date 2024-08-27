@@ -1,37 +1,46 @@
 const express=require('express');
+const userNavegatingShow = require('../userNavegating');
 const router=express.Router();
 router.use(express.static('public'));
 
 router.get('/',(request,response)=>{
-    response.render('./school/index').response.status(200);
+   userNavegatingShow(request);
+   response.render('./school/index');
  });
 
 router.get('/acerca',(request,response)=>{
-    response.render('./school/acerca').response.status(200);
+   userNavegatingShow(request);
+    response.render('./school/acerca');
   });
   
   router.get('/anuncios',(request,response)=>{
-    response.render('./school/anuncio').response.status(200);
+   userNavegatingShow(request);
+    response.render('./school/anuncio');
   });
   
   router.get('/estudantes_honra',(request,response)=>{
-     response.render('./school/estudanteHonra').response.status(200);
+   userNavegatingShow(request);
+     response.render('./school/estudanteHonra');
   });
   
   router.get('/novas_matriculas_confirmacoes',(request,response)=>{
-     response.render('./school/matricula').response.status(200);
+   userNavegatingShow(request);
+     response.render('./school/matricula');
   });
   
   router.get('/portal_estudante',(request,response)=>{
-     response.render('./school/portal').response.status(200);
+   userNavegatingShow(request);
+     response.render('./school/portal');
   });
   
   router.get('/alums',(request,response)=>{
-     response.render('./school/alums').response.status(200);
+   userNavegatingShow(request);
+     response.render('./school/alums');
   });
 
   router.get('/login',(request,response)=>{
-    response.render('./school/login').response.status(200);
+   userNavegatingShow(request);
+    response.render('./school/login');
   });
 
   module.exports=router;
