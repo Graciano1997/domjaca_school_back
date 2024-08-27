@@ -1,0 +1,21 @@
+<%- include('../components/Header',{title:"Portal do Estudante"}) %>
+<body>
+    <main class="dashboardContainer flexH">
+        <%- include('../components/DashboardMenu') %>
+        <div class="mainArea">
+            <%- include('../components/DashboardHeader',{headerArea:"Seu Portal"}) %>
+            <h1 class="portalArea">*Seu Portal</h1>
+            <div class="dashboardItems flexH ">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </main>
+    <%- include('../components/ModalWellcome')%>
+    <script>
+        document.querySelector("#btnContinue").addEventListener("click",()=>{
+         document.querySelector(".wellcomeUser").classList.add('unshow');   
+        })
+    </script>
+<%- include('../components/Footer')%>

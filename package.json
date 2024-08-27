@@ -1,0 +1,32 @@
+{
+  "name": "domjaca",
+  "version": "1.0.0",
+  "description": "This is a School App",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "School",
+    "System"
+  ],
+  "author": "Graciano Henrique",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "i18n": "^0.15.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.4",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
+  }
+}

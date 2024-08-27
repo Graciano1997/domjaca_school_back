@@ -1,0 +1,88 @@
+    <%- include('../components/Header',{title:__('DomJacaSchool')}) %>
+    <%- include('../components/Menus') %>
+    <main class="mainPageContainer">
+        <section class="boasVindasContainer flexV">
+            <h1><%= __('Welcome') %></h1>
+            <h1><%= __('NewEraDomJaca')%></h1>
+            <h2><%= __('NowNear')%></h2>
+        </section>
+         <section class="slideContainer">
+        </section>
+        <section class="missaoContainer">
+            <div class="textContainer">
+                <h1><%= __('Mission')%></h1>
+                <p>
+                    <span id="quote">"</span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et porro possimus voluptatum quos ab? Tenetur explicabo ipsum consectetur temporibus doloremque unde cupiditate,
+                     rerum voluptates voluptatum fuga error optio. Aliquid, expedita.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et porro possimus voluptatum quos ab? Tenetur explicabo ipsum consectetur temporibus doloremque unde cupiditate,
+                     rerum voluptates voluptatum fuga error optio. Aliquid, expedita.
+                </p>
+            </div>
+            <div class="picContainer"> 
+                <img src="/assets/img/missao.png"/>
+            </div>
+        </section>
+
+        <section class="visaoContainer">
+            <div class="picContainer">
+                <img src="/assets/img/visao.jpg"/>
+            </div>
+            <div class="textContainer visao">
+                <h1><%= __('Vision')%></h1>
+                <p>
+                    <span id="quote">"</span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et porro possimus voluptatum quos ab? Tenetur explicabo ipsum consectetur temporibus doloremque unde cupiditate,
+                     rerum voluptates voluptatum fuga error optio. Aliquid, expedita.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et porro possimus voluptatum quos ab? Tenetur explicabo ipsum consectetur temporibus doloremque unde cupiditate,
+                     rerum voluptates voluptatum fuga error optio. Aliquid, expedita.
+                    </p>
+            </div>
+        </section>
+
+        <section class="diferencasContainer">
+            <div class="textContainer">
+                <h1><%= __('Diffecences')%></h1>
+                <p>
+                    <span id="quote">"</span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et porro possimus voluptatum quos ab? Tenetur explicabo ipsum consectetur temporibus doloremque unde cupiditate,
+                     rerum voluptates voluptatum fuga error optio. Aliquid, expedita.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et porro possimus voluptatum quos ab? Tenetur explicabo ipsum consectetur temporibus doloremque unde cupiditate,
+                     rerum voluptates voluptatum fuga error optio. Aliquid, expedita.
+                </p>
+            </div>
+            <div class="picContainer"> 
+                <img src="/assets/img/valores.jpg"/>
+            </div>
+        </section>
+
+
+
+    </main>
+    <div class="wellcome">
+        <div class="circle">
+            <img class="logo" src="/assets/img/logo.jpg" alt="Dom Jaca">
+        </div>
+        <div class="wellcomeContent">
+            <h1><%=__('WelcomeToShool')%></h1>
+            <h1>Dom Jaca</h1>
+            <blockquote style="padding: 8px; font-size: 14px; font-weight: 700; font-style: italic;">
+                "
+                <%=__('Slogan')%>
+                "
+            </blockquote>
+        </div>
+    </div>
+    <script>
+        const circle=document.querySelector('.wellcome');
+        setTimeout(()=>{
+            circle.classList.add('hide');
+        },2500)
+    </script>
+    <%- include('../components/Footer')%>

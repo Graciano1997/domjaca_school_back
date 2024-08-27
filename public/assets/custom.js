@@ -1,0 +1,1 @@
+const LangHandler=(element)=>{window.location.href=element.value;}

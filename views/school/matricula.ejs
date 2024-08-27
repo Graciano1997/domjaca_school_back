@@ -1,0 +1,82 @@
+<%- include('../components/Header',{title:__('Enrollment')}) %>
+<%- include('../components/Menus') %>
+    <main class="homePageContainer">
+        <section class="boasVindasContainer flexV">
+            <h1><%= __('EnrollmentArea')%></h1>
+            <h2><%= __('Register')%></h2>
+        </section>
+        <section class="diferencasContainer">
+            <div class="textContainer">
+                <h1><%= __('StudyWithUs')%></h1>
+              <form  class="formMatricula flexV">
+                <label for="nome">
+                    <%= __('FullName')%>
+                </label>
+                <input type="text" name="nome" id="nome">
+                <label for="documentoTipo">
+                    <%= __('DocType')%>
+                </label>
+                <select name="documentoTipo" id="documentoTipo">
+                    <option value="bilhete"><%= __('IdentityCard')%></option>
+                    <option value="cédula"><%= __('PersonalId')%></option>
+                    <option value="passaporte"><%= __('Passport')%></option>
+                </select>
+                <div class="contatos flexH">
+                    <div class="flexV">
+                        <label for="telefone"><%= __('FatherPhone')%></label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="ex: 935636086">
+                    </div>
+                    <div class="flexV">
+                        <label for="telefone"><%= __('StudentPhone')%></label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="ex: 915678609">
+                    </div>
+                </div>
+                <label for="sexo">
+                    <%= __('Gender')%>
+                </label>
+                <select name="sexo" id="sexo">
+                    <option value="masculino"><%= __('Male')%></option>
+                    <option value="femenino"><%= __('Female')%></option>
+                </select>
+                <label for="classe">
+                    <%= __('Grade')%>
+                </label>
+                <select name="classe" id="classe">
+                    <option value="1">1ª <%= __('Grade')%></option>
+                    <option value="2">2ª <%= __('Grade')%></option>
+                    <option value="3">3ª <%= __('Grade')%></option>
+                    <option value="4">4ª <%= __('Grade')%></option>
+                    <option value="5">5ª <%= __('Grade')%></option>
+                    <option value="6">6ª <%= __('Grade')%></option>
+                    <option value="7">7ª <%= __('Grade')%></option>
+                    <option value="8">8ª <%= __('Grade')%></option>
+                    <option value="9">9ª <%= __('Grade')%></option>
+                </select>
+                <!-- <label for="turno">
+                    Turno
+                </label>
+                <select name="turno" id="turno">
+                    <option value="manhã">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                </select> -->
+                <label for="matricula">
+                    <%= __('EnrollmentOrConfirmation')%>
+                </label>
+                <select name="matricula" id="matricula">
+                    <option value="matricula"><%= __('Enroll')%></option>
+                    <option value="confirmacao"><%= __('Confirmation')%></option>
+                </select>
+                <label for="foto"><%= __('Photography')%></label>
+                <input type="file" name="foto" id="foto">
+                <label for="documento"><%= __('Document')%></label>
+                <input type="file" name="documento" id="documento">
+                <label for="documento"><%= __('DeclarationOrCertificate')%></label>
+                <input type="file" name="documento" id="documento">
+               <button><%= __('Save')%></button> 
+              </form>
+            </div>
+            <div class="picContainer matriculaBg"> 
+            </div>
+        </section>
+    </main>
+    <%- include('../components/Footer') %>

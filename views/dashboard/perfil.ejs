@@ -1,0 +1,42 @@
+<%- include('../components/Header',{title:"Perfil do Estudante"}) %>
+<body>
+    <main class="dashboardContainer flexH">
+        <%- include('../components/DashboardMenu') %>
+
+        <div class="mainArea flexV">
+            <%- include('../components/DashboardHeader',{headerArea:"Seu Perfil"}) %>
+            <h1 class="portalArea">*Perfil</h1>
+            <div class="studentProfileContainer flexV">
+                <div class="profilePic">
+                    <img src="/users/gra.jpg" alt="user-Avatar">
+                </div>
+                <form action="" class="avatarForm flexV">
+                    <label for="foto">Carregar Foto</label>
+                    <input type="file" name="foto" id="foto">
+                </form>
+                <h3 id="studentProfileContainerNome">Graciano Henrique</h3>
+                <ul class="flexV">
+                    <li>
+                        <h4>Turma: A</h4>
+                    </li>
+                    <li>
+                        <h4>Classe: 7ª</h4>
+                    </li>
+                    <li>
+                        <h4>Turno: Tarde</h4>
+                    </li>
+                    <li>
+                        <h4>Nº de Matricula: 20247A</h4>
+                    </li>
+                    <li>
+                        <h4>Ano Lectivo: 2024 / 2025</h4>
+                    </li>
+                    <li>
+                        <h4>Email: gracianomanuelhenrique@gmail.com</h4>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+    <%- include('../components/Footer')%>
