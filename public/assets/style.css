@@ -832,7 +832,8 @@ font-size: 14px;
     height: 20px;
     background-color: gold;
   }
-  nav ul li a {
+  nav ul li a,
+  nav ul li select {
     color: white;
     text-decoration: none;  
     font-size: 15px;
@@ -841,7 +842,10 @@ font-size: 14px;
   }
   
   nav ul li a:hover,
-  a:active{
+  a:active,
+  nav ul li select:hover,
+  nav ul li select:active  
+  {
     padding-bottom: 5px;
     border-bottom: 2px solid white;
   }
